@@ -5,6 +5,10 @@ pdfReader = PyPDF2.PdfFileReader(book)
 pages = pdfReader.numPages
 
 speaker = pyttsx3.init()
+newVoiceRate = 160
+speaker.setProperty('rate',newVoiceRate)
+
+
 for num in range(7, pages):
     page = pdfReader.getPage(num)
     text = page.extractText()
