@@ -19,8 +19,11 @@ volume = speaker.getProperty('volume')
 speaker.setProperty('volume', 1.0)
 
 # set the voice property  voices[0] is male and voices[1] is female
+v = input("Voice you need : male or female")
+x = v.lower()
+dict = {'male': 0, 'female': 1}
 voices = speaker.getProperty('voices')
-speaker.setProperty('voice', voices[0].id)
+speaker.setProperty('voice', voices[dict[x]].id)
 
 # It skips the first page since numbering starts from 0.
 for num in range(1, pages):
@@ -28,3 +31,4 @@ for num in range(1, pages):
     text = page.extractText()
     speaker.say(text)
     speaker.runAndWait()
+
