@@ -14,7 +14,7 @@ To Read text (Text to speech)
 `
 ` pip install pyttsx3
 `
-Go to https://pypi.org/project/pyttsx3/ documentation and try to change the other properties of Speaker like Changing Voice from male to female, Rate and Volume
+Go to https://pypi.org/project/pyttsx3/ documentation and try to change the other properties of Speaker as of your choice like Changing Voice from male to female, Rate and Volume
 
 #### Note:
 This code can read all the printable text from a PDF file/ Book
